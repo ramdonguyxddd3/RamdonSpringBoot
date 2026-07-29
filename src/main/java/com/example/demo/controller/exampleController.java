@@ -1,10 +1,14 @@
 package com.example.demo.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/example")
 public class exampleController {
-
+    @PostMapping
+    public String saludar(){
+        return "hola";
+    }
 }
